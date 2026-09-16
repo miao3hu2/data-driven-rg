@@ -1,0 +1,11 @@
+[project]
+name = "data-driven-rg"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "givernylocal>=3.6.2",
+    "numpy>=2.4.6",
+    "scipy>=1.17.1",
+]
