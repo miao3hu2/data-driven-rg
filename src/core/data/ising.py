@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 import numpy as np
 
-from .field import Field
+from core.data.field import Field
 
 # Square lattice Ising model in 2D with periodic boundary conditions
 @dataclass

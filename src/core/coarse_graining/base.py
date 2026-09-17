@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from ..data.field import Field
+from core.data.field import Field
 
 
 class CoarseGrainer(ABC):

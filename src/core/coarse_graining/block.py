@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 import numpy as np
 
-from .base import CoarseGrainer
-from ..data.field import Field
+from core.coarse_graining.base import CoarseGrainer
+from core.data.field import Field
 
 @dataclass
 class MajorityBlockSpin(CoarseGrainer):
