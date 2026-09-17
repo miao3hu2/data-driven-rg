@@ -10,8 +10,8 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "givernylocal>=3.6.2",
-    "numpy>=2.4.6",
-    "scipy>=1.17.1",
+    "numpy>=2.2.6",
+    "scipy>=1.15.3",
 ]
 
 [dependency-groups]
