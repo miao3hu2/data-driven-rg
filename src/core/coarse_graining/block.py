@@ -2,7 +2,7 @@ from dataclasses import dataclass
 import numpy as np
 
 from core.coarse_graining.base import CoarseGrainer
-from core.data.field import Field
+from core.data.base import Field
 
 @dataclass
 class MajorityBlockSpin(CoarseGrainer):

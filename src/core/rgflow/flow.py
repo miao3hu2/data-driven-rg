@@ -1,13 +1,13 @@
 from dataclasses import dataclass
-from core.rgflow.couplings import Couplings
+from core.rgflow.couplings import CouplingsForOperators
 
 
 @dataclass
 class RGFlow:
 
-    points: list[Couplings]
+    points: list[CouplingsForOperators]
 
-    def add(self, couplings: Couplings):
+    def add(self, couplings: CouplingsForOperators):
         self.points.append(couplings)
 
     @property

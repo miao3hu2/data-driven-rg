@@ -1,11 +1,22 @@
+import numpy as np
 import pytest
 
+from core.operators.base import Operator, OperatorBasis
 from core.rgflow.flow import RGFlow
-from core.rgflow.couplings import Couplings
+from core.rgflow.couplings import CouplingsForOperators
+
+
+class _StubOperator(Operator):
+    def __init__(self, name):
+        self.name = name
+
+    def evaluate(self, field):
+        return np.array(0.0)
 
 
 def _couplings(K, scale):
-    return Couplings({"K": K}, scale=scale)
+    basis = OperatorBasis([_StubOperator("K")])
+    return CouplingsForOperators(basis, np.array([K]), scale=scale)
 
 
 def test_flow_len_and_scales():

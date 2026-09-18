@@ -1,6 +1,6 @@
 import numpy as np
 
-from core.data.field import Field
+from core.data.base import Field
 from core.data.ising import Ising2D
 from core.coarse_graining.block import MajorityBlockSpin
 

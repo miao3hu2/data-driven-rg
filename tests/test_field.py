@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from core.data.field import Field, Grid
+from core.data.base import Field, Grid
 
 
 def test_field_scalar_scale_broadcasts_to_all_spatial_dims():

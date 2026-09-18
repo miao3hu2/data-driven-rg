@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from core.data.field import Field
+from core.data.base import Field
 from core.operators.base import Operator, OperatorBasis
 from core.operators.ising import NearestNeighbor, NextNearestNeighbor
 

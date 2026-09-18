@@ -1,6 +1,6 @@
 import numpy as np
 
-from core.data.field import Field
+from core.data.base import Field
 
 
 def magnetization(field: Field) -> np.ndarray:
